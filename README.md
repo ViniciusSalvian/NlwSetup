@@ -1,4 +1,4 @@
-<h1 align="center"> DevLinks </h1>
+<h1 align="center"> NLW #11 SetUp </h1>
 
 <p align="center">
 Nlw é um evento gratuito e exclusivo, promovido pela rocketseat para ensino de tecnologias WEB. <br/>
