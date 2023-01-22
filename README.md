@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O habbits é um app desenvolvido para ajudar as rastrear os 
+O habits é um app desenvolvido para ajudar as rastrear os 
 hábitos.
 
  - [Visite o projeto online](https://ViniciusSalvian.github.io/NlwSetup)
