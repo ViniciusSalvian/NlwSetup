@@ -6,7 +6,7 @@
 
 :root {
   --bg-color: #18181b;
-  --btn-color: #34D399;
+  --btn-color: #34d399;
   --inputbd-color: #27272a; /* border and input background color*/
   --inputbckg-color: #18181b;
   --day-color: #a1a1aa;
@@ -23,13 +23,13 @@ header {
   background-color: var(--bg-color);
 }
 
-#divSwitchTheme{
+#divSwitchTheme {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#btnSwitchTheme{
+#btnSwitchTheme {
   display: flex;
   width: 6rem;
   height: 4vh;
@@ -37,29 +37,27 @@ header {
   justify-content: flex-start;
 }
 
-#switchTheme{
- border-radius: 50px;
- margin-left: -10px;
- background-color: var(--day-color);
- border-color: var(--day-color);
- height: 3vh;
- width: 3vh;
- /* transition: transform 1s; */
- /* transform: translateX(2.5rem); */
+#switchTheme {
+  border-radius: 50px;
+  margin-left: -10px;
+  background-color: var(--day-color);
+  border-color: var(--day-color);
+  height: 25px;
+  width: 25px;
 }
 
-#fontSwitch{
+#fontSwitch {
   color: var(--day-color);
 }
 
 header img {
-  -webkit-box-shadow: 16px 12px 15px .15vh var(--btn-color);
-  -moz-box-shadow: 16px 12px 15px .15vh var(--btn-color);
-  box-shadow: 16px 12px 15px .15vh var(--btn-color);
+  -webkit-box-shadow: 16px 12px 15px 0.15vh var(--btn-color);
+  -moz-box-shadow: 16px 12px 15px 0.15vh var(--btn-color);
+  box-shadow: 16px 12px 15px 0.15vh var(--btn-color);
 }
 
 header button img {
-box-shadow: none;  
+  box-shadow: none;
 }
 
 body {
@@ -84,11 +82,10 @@ button {
   cursor: pointer;
 }
 
-
-#register:hover{
+#register:hover {
   background-color: var(--btn-color);
-  color: var(--bg-color); 
-  transition: .5s;
+  color: var(--bg-color);
+  transition: 0.5s;
 }
 
 #form-habits {
@@ -150,8 +147,22 @@ input:checked {
   border: 2px solid var(--btn-color);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   button div {
     display: none;
+  }
+  header {
+    display: flex;
+    width: 110%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 360px) {
+  #logoHabits {
+    margin-bottom: 30px;
+  }
+  #register {
+    margin-left: 150px;
   }
 }
