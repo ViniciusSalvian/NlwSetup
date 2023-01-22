@@ -13,7 +13,7 @@ btnSwitchTheme.addEventListener("click", function () {
     root.style.setProperty("--bg-color", "#f7f3f3")
     root.style.setProperty("--font-color", "#18181b"),
       root.style.setProperty("--day-color", "#18181b")
-    
+
     document.getElementById("logoHabits").src = "./assets/logo2.svg"
     switchThemeInput.style.setProperty("transform", "translateX(2.5rem)")
     switchThemeInput.style.setProperty("transition", "transform 0.1s")
@@ -22,11 +22,11 @@ btnSwitchTheme.addEventListener("click", function () {
     root.style.setProperty("--bg-color", "#18181b")
     root.style.setProperty("--font-color", "#f7f3f3"),
       root.style.setProperty("--day-color", "#a1a1aa")
-   
+
     document.getElementById("logoHabits").src = "./assets/logo.svg"
     switchThemeInput.style.setProperty("transform", "translateX(-0.2rem)")
     switchThemeInput.style.setProperty("transition", "transform 0.1s")
-     body.dataset.theme = "dark"
+    body.dataset.theme = "dark"
   }
 })
 

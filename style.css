@@ -23,6 +23,11 @@ header {
   background-color: var(--bg-color);
 }
 
+#logoHabits{
+  border-radius: 6px;
+  padding: 10px;
+}
+
 #divSwitchTheme {
   display: flex;
   flex-direction: column;
@@ -34,26 +39,28 @@ header {
   width: 6rem;
   height: 4vh;
   border-radius: 40px;
-  justify-content: flex-start;
+  justify-content: flex-start;  
 }
 
 #switchTheme {
   border-radius: 50px;
-  margin-left: -10px;
+  margin-left: -12px;
   background-color: var(--day-color);
   border-color: var(--day-color);
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 34px;
 }
 
 #fontSwitch {
   color: var(--day-color);
+  margin-bottom: 10px;
+  font-family: "Inter";
 }
 
 header img {
-  -webkit-box-shadow: 16px 12px 15px 0.15vh var(--btn-color);
-  -moz-box-shadow: 16px 12px 15px 0.15vh var(--btn-color);
-  box-shadow: 16px 12px 15px 0.15vh var(--btn-color);
+  -webkit-box-shadow: 8px 8px 15px 0.15vh var(--btn-color);  /* X Y desfoque cor*/
+  -moz-box-shadow: 8px 8px 15px 0.15vh var(--btn-color);
+  box-shadow: 8px 8px 15px 0.15vh var(--btn-color);
 }
 
 header button img {
@@ -134,7 +141,7 @@ button {
 input {
   appearance: none;
   -webkit-appearance: none;
-  border: 2px solid var(--inputbd-color);
+  border: 2px solid var(--btn-color);
   background-color: var(--inputbg-color);
   width: 64px;
   height: 64px;
@@ -166,3 +173,5 @@ input:checked {
     margin-left: 150px;
   }
 }
+
+
