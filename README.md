@@ -3,7 +3,6 @@
 <p align="center">
 Nlw é um evento gratuito e exclusivo, promovido pela rocketseat para ensino de tecnologias WEB. <br/>
 
-
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;

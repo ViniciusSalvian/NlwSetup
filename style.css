@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #18181b;
+  --btn-color: #34D399;
+  --inputbd-color: #27272a; /* border and input background color*/
+  --inputbckg-color: #18181b;
+  --day-color: #a1a1aa;
+  --font-color: #f7f3f3;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -11,11 +20,50 @@ header {
   padding: 40px;
   position: fixed;
   width: 100%;
-  background-color: black;
+  background-color: var(--bg-color);
+}
+
+#divSwitchTheme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btnSwitchTheme{
+  display: flex;
+  width: 6rem;
+  height: 4vh;
+  border-radius: 40px;
+  justify-content: flex-start;
+}
+
+#switchTheme{
+ border-radius: 50px;
+ margin-left: -10px;
+ background-color: var(--day-color);
+ border-color: var(--day-color);
+ height: 3vh;
+ width: 3vh;
+ /* transition: transform 1s; */
+ /* transform: translateX(2.5rem); */
+}
+
+#fontSwitch{
+  color: var(--day-color);
+}
+
+header img {
+  -webkit-box-shadow: 16px 12px 15px .15vh var(--btn-color);
+  -moz-box-shadow: 16px 12px 15px .15vh var(--btn-color);
+  box-shadow: 16px 12px 15px .15vh var(--btn-color);
+}
+
+header button img {
+box-shadow: none;  
 }
 
 body {
-  background-color: black;
+  background-color: var(--bg-color);
   /*display: grid. place-items: center
    mesma coisa do codigo abaixo*/
   height: 100vh;
@@ -24,9 +72,9 @@ body {
 button {
   padding: 16px 24px;
   border-radius: 8px;
-  border: 1px solid #8b5cf6;
+  border: 1px solid var(--btn-color);
   background-color: transparent;
-  color: white;
+  color: var(--font-color);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -34,6 +82,13 @@ button {
   font-weight: 600;
   line-height: 125%;
   cursor: pointer;
+}
+
+
+#register:hover{
+  background-color: var(--btn-color);
+  color: var(--bg-color); 
+  transition: .5s;
 }
 
 #form-habits {
@@ -69,7 +124,7 @@ button {
   flex-direction: column;
   font-family: "Roboto Mono";
   font-weight: 700;
-  color: #a1a1aa;
+  color: var(--day-color);
   gap: 24px;
 }
 
@@ -82,8 +137,8 @@ button {
 input {
   appearance: none;
   -webkit-appearance: none;
-  border: 2px solid #27272a;
-  background-color: #18181b;
+  border: 2px solid var(--inputbd-color);
+  background-color: var(--inputbg-color);
   width: 64px;
   height: 64px;
   border-radius: 8px;
@@ -91,13 +146,12 @@ input {
 }
 
 input:checked {
-  background-color: #8b5cf6;
-  border: 2px solid #8b5cf6;
+  background-color: var(--btn-color);
+  border: 2px solid var(--btn-color);
 }
 
-@media (max-width: 500px)
-{
-    button div{
-      display: none;
-    }
+@media (max-width: 500px) {
+  button div {
+    display: none;
+  }
 }
