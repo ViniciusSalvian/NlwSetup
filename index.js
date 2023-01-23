@@ -38,12 +38,12 @@ function add() {
   const dayExist = nlwSetup.dayExists(today)
 
   if (dayExist) {
-    alert("Dia ja existente! 🔴")
+    alert("Existing day! 🔴")
     return
   }
 
   nlwSetup.addDay(today)
-  alert("Adicionado com sucesso! ✅")
+  alert("sucessfully added! ✅")
 }
 
 function save() {
